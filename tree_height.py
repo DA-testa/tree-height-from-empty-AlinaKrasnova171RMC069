@@ -41,8 +41,9 @@ def main():
     elif "F" in imp:
         # let user input file name to use, don't allow file names with letter a
         # account for github input inprecision
-        #while True:
-        path = '/DA-testa/tree-height-from-empty-AlinaKrasnova171RMC069/tree/main/test/'
+        
+        path = '/DA-testa/tree-height-from-empty-AlinaKrasnova171RMC069/test/'
+        #path = '/workspaces/tree-height-from-empty-AlinaKrasnova171RMC069/test/'
         file = input()
         folder = path + file
         if "a" not in file:
