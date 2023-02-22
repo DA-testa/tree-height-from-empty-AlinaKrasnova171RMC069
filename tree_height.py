@@ -41,19 +41,21 @@ def main():
     elif "F" in imp:
         # let user input file name to use, don't allow file names with letter a
         # account for github input inprecision
-        while True:
-            file = input("Enter file name: ")
-            if "a" not in file:
-                try:
-                    with open(file) as fl:
-                        n = int(fl.readline())
-                        pon = list(map(int, fl.readline().split()))
-                except FileNotFoundError:
-                    print("Error: file not found ")
-                    return
+        #while True:
+        path = '/workspaces/tree-height-from-empty-AlinaKrasnova171RMC069/test/'
+        file = input("Enter file name: ")
+        folder = path + file
+        if "a" not in file:
+            try:
+                with open(folder) as fl:
+                    n = int(fl.readline())
+                    pon = list(map(int, fl.readline().split()))
+            except FileNotFoundError:
+                print("Error: file not found ")
+                return
 
-            else:
-                print("Error")
+        else:
+            print("Error")
 
         
     else:
