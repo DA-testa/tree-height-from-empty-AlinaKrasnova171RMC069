@@ -46,8 +46,8 @@ def main():
             if "a" not in file:
                 try:
                     with open(file) as fl:
-                        n = int(file.readline())
-                        pon = list(map(int, file.readline().split()))
+                        n = int(fl.readline())
+                        pon = list(map(int, fl.readline().split()))
                 except FileNotFoundError:
                     print("Error: file not found ")
                     return
