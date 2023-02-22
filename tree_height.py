@@ -32,7 +32,7 @@ def compute_height(n, parents):
 
 def main():
     # implement input form keyboard and from files
-    imp = input("Enter 'I' or 'F' : ")
+    imp = input()
     if "I" in imp:
         # input number of elements
         n = int(input())
@@ -43,7 +43,7 @@ def main():
         # account for github input inprecision
         #while True:
         path = '/DA-testa/tree-height-from-empty-AlinaKrasnova171RMC069/tree/main/test/'
-        file = input("Enter file name: ")
+        file = input()
         folder = path + file
         if "a" not in file:
             try:
