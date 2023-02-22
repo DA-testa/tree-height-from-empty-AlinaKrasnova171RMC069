@@ -2,7 +2,6 @@
 
 import sys
 import threading
-import numpy as np
 
 
 def compute_height(n, parents):
@@ -38,7 +37,7 @@ def main():
         # input number of elements
         n = int(input())
         # input values in one variable, separate with space, split these values in an array
-        pon = np.array(list(map(int, input().split())))
+        pon = list(map(int, input().split()))
     elif "F" in imp:
         # let user input file name to use, don't allow file names with letter a
         # account for github input inprecision
@@ -48,7 +47,7 @@ def main():
                 try:
                     with open(file) as fl:
                         n = int(file.readline())
-                        pon = np.array(list(map(int, file.readline().split())))
+                        pon = list(map(int, file.readline().split()))
                 except FileNotFoundError:
                     print("Error: file not found ")
                     return
