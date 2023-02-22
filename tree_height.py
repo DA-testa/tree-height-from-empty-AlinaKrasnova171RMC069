@@ -3,7 +3,7 @@
 import sys
 import threading
 from tkinter import filedialog
-import tkinter as log
+#import tkinter as log
 
 
 def compute_height(n, parents):
@@ -39,7 +39,7 @@ def main():
         n = int(input())
         pon = list(map(int, input().split()))
     elif "F" in imp:
-        root = log.Tk()
+        root = filedialog.Tk()
         root.withdraw()
         f = filedialog.askopenfilename()
         with open(f) as file:
