@@ -42,7 +42,7 @@ def main():
         # let user input file name to use, don't allow file names with letter a
         # account for github input inprecision
         
-        path = '/DA-testa/tree-height-from-empty-AlinaKrasnova171RMC069/test/'
+        path = './test/'
         #path = '/workspaces/tree-height-from-empty-AlinaKrasnova171RMC069/test/'
         file = input()
         folder = path + file
